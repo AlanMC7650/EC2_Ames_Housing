@@ -18,13 +18,18 @@ y AutoML (FLAML) como benchmark.
 
 ## Cómo ejecutar
 ```bash
+git clone https://github.com/AlanMC7650/EC2_Ames_Housing.git && cd EC2_Ames_Housing
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-# colocar data/AmesHousing.csv
 jupyter notebook notebooks/EC2_Ames_Housing_CRISP-DM.ipynb   # Run All (~10 min en CPU)
 ```
 Orden recomendado: ejecutar el notebook de arriba hacia abajo. La semilla (42) y todos los parámetros
-están en la celda 0 y se guardan en `config/experiment_config.json`.
+están en la celda 0 y se guardan en `config/experiment_config.json`. Probado con Python 3.12 y las
+versiones de `requirements.txt`.
+
+`data/AmesHousing.csv` ya viene en el repositorio; si falta (p. ej. al abrir solo el notebook en
+Google Colab), el notebook lo descarga automáticamente desde este repo. En Colab, ejecutar antes
+`!pip install -q "flaml[automl]"` (Colab no lo trae instalado).
 
 ## Resultados (test, ejecución de referencia)
 | Modelo | RMSE log | MAPE | R² |

@@ -8,4 +8,4 @@ Descarga (cualquiera de estas fuentes es la misma versión completa):
 
 No usar el `train.csv` de la competencia Kaggle *House Prices* (1 460 filas): es un subconjunto.
 
-Registrar aquí la fecha de acceso: ____________
+Fecha de acceso: 2026-10-21
