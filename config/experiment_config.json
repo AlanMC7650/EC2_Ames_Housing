@@ -1,0 +1,48 @@
+{
+  "seed": 42,
+  "data_file": "AmesHousing.csv",
+  "target": "SalePrice",
+  "test_size": 0.2,
+  "val_size_of_rest": 0.25,
+  "cv_folds": 5,
+  "outlier_rule": "Gr Liv Area > 4000 (recomendaci\u00f3n De Cock, 2011)",
+  "excluded_columns": [
+    "Order",
+    "PID",
+    "Sale Type",
+    "Sale Condition"
+  ],
+  "automl_tool": "FLAML",
+  "automl_time_budget_s": 120,
+  "kmeans_k": 4,
+  "chosen_model": "Lasso",
+  "tuned_params": {
+    "Ridge": {
+      "alpha": 146.7799267622069
+    },
+    "Lasso": {
+      "alpha": 0.0008858667904100822
+    },
+    "RandomForest": {
+      "n_estimators": 500,
+      "min_samples_leaf": 1,
+      "max_features": 0.3,
+      "max_depth": 15
+    },
+    "HistGB": {
+      "min_samples_leaf": 10,
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.02,
+      "l2_regularization": 0
+    }
+  },
+  "versions": {
+    "python": "3.13.16",
+    "sklearn": "1.9.1",
+    "pandas": "3.0.5"
+  },
+  "interval_80_log": [
+    -0.10047941117176969,
+    0.12247812343407354
+  ]
+}

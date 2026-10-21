@@ -1,0 +1,15 @@
+Prueba,OK
+El modelo recargado predice igual que el de memoria,True
+Las métricas recalculadas coinciden con reports/tabla_final_test.csv,True
+Re-entrenar con la misma semilla da el mismo modelo,True
+Predicciones finitas y positivas,True
+Predicciones dentro de un rango plausible (10k–1M USD),True
+Residuos sin sesgo global (media del residuo log ≈ 0),True
+Funciona con valores faltantes,True
+Funciona con categorías nunca vistas en entrenamiento,True
+No depende del orden de las columnas,True
+Predicción por lotes = predicción fila a fila,True
+Más área habitable ⇒ mayor precio (monótono),True
+Más calidad general ⇒ mayor precio (monótono),True
+Casa más nueva ⇒ mayor precio,True
+El intervalo del 80 % cubre entre 75 % y 85 % de las casas de test,True

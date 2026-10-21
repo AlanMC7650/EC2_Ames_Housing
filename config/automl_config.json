@@ -1,0 +1,30 @@
+{
+  "settings": {
+    "task": "regression",
+    "metric": "rmse",
+    "time_budget": 120,
+    "eval_method": "cv",
+    "n_splits": 5,
+    "seed": 42,
+    "estimator_list": [
+      "lgbm",
+      "xgboost",
+      "rf",
+      "extra_tree"
+    ],
+    "verbose": 0
+  },
+  "best_estimator": "lgbm",
+  "best_config": {
+    "n_estimators": 1754,
+    "num_leaves": 12,
+    "min_child_samples": 11,
+    "learning_rate": 0.011035494375075337,
+    "log_max_bin": 10,
+    "colsample_bytree": 0.566593261109728,
+    "reg_alpha": 0.196831608022692,
+    "reg_lambda": 0.048025288298930734
+  },
+  "best_cv_rmse_log": 0.12237303972459201,
+  "time_s": 122.2
+}
